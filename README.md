@@ -1,4 +1,4 @@
-# On-Load
+# On Load
 
 Add a class to an image when is loaded.
 
