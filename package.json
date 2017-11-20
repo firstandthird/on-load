@@ -1,13 +1,13 @@
 {
-  "name": "on-load",
+  "name": "@firstandthird/on-load",
   "version": "1.0.0",
   "description": "Add a class to an image when is loaded",
-  "main": "dist/onload.js",
+  "main": "dist/on-load.js",
   "module": "index.js",
   "scripts": {
     "start": "scriptkit",
     "build": "scriptkit build",
-    "test": "cat test/onload.test.dist.js | tape-run --static . --browser phantomjs --render tap-spec",
+    "test": "cat test/on-load.test.dist.js | tape-run --static . --browser phantomjs --render tap-spec",
     "dev": "scriptkit dev",
     "prepublish": "scriptkit"
   },
@@ -38,8 +38,8 @@
   },
   "scriptkit": {
     "files": {
-      "dist/onload.js": "index.js",
-      "test/onload.test.dist.js": "test/onload.test.js"
+      "dist/on-load.js": "index.js",
+      "test/on-load.test.dist.js": "test/on-load.test.js"
     },
     "scripts": {
       "babel": {

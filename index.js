@@ -30,7 +30,6 @@ export default class OnLoad extends Domodule {
   onLoad() {
     addClass(this.el, this.options.className);
   }
-
 }
 
 Domodule.register('OnLoad', OnLoad);

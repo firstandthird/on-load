@@ -8140,4 +8140,4 @@ test('Image loads from CSS', function (assert) {
 
 }());
 
-//# sourceMappingURL=onload.test.dist.js.map
+//# sourceMappingURL=on-load.test.dist.js.map
