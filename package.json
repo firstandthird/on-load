@@ -1,0 +1,66 @@
+{
+  "name": "@firstandthird/on-load",
+  "version": "1.0.0",
+  "description": "Add a class to an image when is loaded",
+  "main": "dist/on-load.js",
+  "module": "index.js",
+  "scripts": {
+    "start": "scriptkit",
+    "build": "scriptkit build",
+    "test": "cat test/on-load.test.dist.js | tape-run --static . --browser phantomjs --render tap-spec",
+    "dev": "scriptkit dev",
+    "prepublish": "scriptkit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firstandthird/on-load.git"
+  },
+  "keywords": [
+    "onload",
+    "lazyload"
+  ],
+  "author": "First+Third <code@firstandthird.com> (http://firstandthird.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/firstandthird/on-load/issues"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true
+    },
+    "extends": "firstandthird",
+    "plugins": [
+      "compat"
+    ],
+    "rules": {
+      "compat/compat": 2
+    }
+  },
+  "scriptkit": {
+    "files": {
+      "dist/on-load.js": "index.js",
+      "test/on-load.test.dist.js": "test/on-load.test.js"
+    },
+    "scripts": {
+      "babel": {
+        "exclude": [
+          "node_modules/tape-rollup/*"
+        ]
+      }
+    }
+  },
+  "homepage": "https://github.com/firstandthird/on-load#readme",
+  "devDependencies": {
+    "domassist": "^1.9.1",
+    "domodule": "^5.1.3",
+    "eslint": "^4.11.0",
+    "eslint-config-firstandthird": "4.0.1",
+    "eslint-plugin-compat": "^2.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "phantomjs-prebuilt": "2.1.16",
+    "scriptkit": "0.3.0",
+    "tap-spec": "4.1.1",
+    "tape-rollup": "4.6.4",
+    "tape-run": "3.0.0"
+  }
+}
